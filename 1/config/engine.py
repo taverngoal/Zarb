@@ -1,8 +1,8 @@
 # coding:utf-8
 from hashlib import sha1
-from flask import Flask, render_template, url_for, redirect, request, g
+from flask import Flask, render_template, request, g
 from app import modules as C
-from flask_sqlalchemy import SQLAlchemy
+from ext.flask_sqlalchemy import SQLAlchemy
 
 
 class AppFactory(object):
