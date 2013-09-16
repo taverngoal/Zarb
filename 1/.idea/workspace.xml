@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config_bae.py" afterPath="$PROJECT_DIR$/config_bae.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="F:\WorkStation\cqutabc\1\config.py" afterPath="$PROJECT_DIR$/config123.py" />
     </list>
     <ignored path="1.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324033742" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324116124" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +47,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config_bae.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config_bae.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config_bae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="28" selection-start="155" selection-end="155" vertical-scroll-proportion="0.2432">
+            <state line="8" column="28" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
+      <file leaf-file-name="config123.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config123.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="19" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+            <state line="9" column="24" selection-start="165" selection-end="165" vertical-scroll-proportion="0.2736">
               <folding />
             </state>
           </provider>
@@ -267,7 +267,11 @@
       <created>1379324035462</created>
       <updated>1379324035462</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test">
+      <created>1379324116898</created>
+      <updated>1379324116898</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -398,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="20" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0608">
@@ -430,7 +427,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config_bae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="155" selection-end="155" vertical-scroll-proportion="0.2432">
+        <state line="8" column="28" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config123.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="165" selection-end="165" vertical-scroll-proportion="0.2736">
           <folding />
         </state>
       </provider>
