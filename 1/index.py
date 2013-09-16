@@ -1,7 +1,7 @@
 #-*- coding:utf-8 -*-
 
 from bae.core.wsgi import WSGIApplication
-from engine import app, factory, db
+from config.engine import app, factory, db
 from bae.api import logging
 
 

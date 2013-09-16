@@ -1,5 +1,4 @@
-import engine
-from sqlalchemy import Table
+from config import engine
 
 engine.factory.Register_Config()
 engine.db.create_all()
