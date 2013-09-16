@@ -73,9 +73,9 @@ class AppFactory(object):
         def teardown_request(exception):
             self.db.session.commit()
 
-        @self.__app__.route('/')
-        def default_index():
-            return redirect(url_for('abc.index'))
+        # @self.__app__.route('/')
+        # def default_index():
+        #     return redirect(url_for('abc.index'))
 
         @self.__app__.route('/init', methods=['GET', 'POST'])
         def init_Config():
