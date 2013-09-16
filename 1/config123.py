@@ -12,8 +12,8 @@ MYSQL_PORT = 3306
 MYSQL_DB = 'sae'
 
 SQLALCHEMY_POOL_RECYCLE = 10
-SQLALCHEMY_DATABASE_URI = "sqlite:///db/foo.db"
-# SQLALCHEMY_DATABASE_URI = "mysql://%s:%s@%s/%s?charset=utf8" % (MYSQL_USER, MYSQL_PWD, MYSQL_HOST, MYSQL_DB)
+# SQLALCHEMY_DATABASE_URI = "sqlite:///db/foo.db"
+SQLALCHEMY_DATABASE_URI = "mysql://%s:%s@%s/%s?charset=utf8" % (MYSQL_USER, MYSQL_PWD, MYSQL_HOST, MYSQL_DB)
 
 UPLOAD_FOLDER = '/static/upload/'
 ALLOWED_EXTENSIONS = ['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif']
