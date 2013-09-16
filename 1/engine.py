@@ -108,7 +108,6 @@ class AppFactory(object):
 factory = AppFactory()
 app = factory.CreateApp()
 db = factory.db
-# db.metadata.create_all(bind=db.engine)
 
 
 # from tavern.views import tavern

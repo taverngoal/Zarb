@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller.py" afterPath="$PROJECT_DIR$/app/controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/engine.py" afterPath="$PROJECT_DIR$/engine.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="F:\WorkStation\cqutabc\1\config123.py" afterPath="$PROJECT_DIR$/config.py" />
     </list>
     <ignored path="1.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324240157" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324321894" ignored="false" />
     <file path="/a.dummy" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324163982" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="engine.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="engine.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="27" selection-start="2788" selection-end="2788" vertical-scroll-proportion="0.3008">
+            <state line="114" column="0" selection-start="3049" selection-end="3049" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="71" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0608">
               <folding />
             </state>
           </provider>
@@ -79,8 +90,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config123.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config123.py">
+      <file leaf-file-name="config.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="28" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
               <folding />
@@ -111,6 +122,7 @@
         <option value="$PROJECT_DIR$/config123.py" />
         <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/engine.py" />
+        <option value="$PROJECT_DIR$/app/controller.py" />
       </list>
     </option>
   </component>
@@ -162,6 +174,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,7 +334,11 @@
       <created>1379324241619</created>
       <updated>1379324241619</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test">
+      <created>1379324323107</created>
+      <updated>1379324323107</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -404,13 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="354" selection-end="354" vertical-scroll-proportion="0.304">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/storage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="35" selection-start="269" selection-end="269" vertical-scroll-proportion="0.2432">
@@ -446,7 +469,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config123.py">
+    <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="28" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
           <folding />
@@ -482,7 +505,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/engine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="27" selection-start="2788" selection-end="2788" vertical-scroll-proportion="0.3008">
+        <state line="114" column="0" selection-start="3049" selection-end="3049" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="71" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0608">
           <folding />
         </state>
       </provider>
