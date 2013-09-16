@@ -7,11 +7,12 @@
     </list>
     <ignored path="1.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324985590" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379325095731" ignored="false" />
     <file path="/a.dummy" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324163982" ignored="false" />
     <file path="/config.py" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324608069" ignored="false" />
     <file path="/__init__.py" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324723213" ignored="false" />
     <file path="/controller.py" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324860033" ignored="false" />
+    <file path="/engine.py" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379325133698" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
       <file leaf-file-name="engine.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/engine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="8" selection-start="1857" selection-end="1964" vertical-scroll-proportion="0.304">
+            <state line="92" column="76" selection-start="2548" selection-end="2548" vertical-scroll-proportion="0.8208">
               <folding>
                 <element signature="e#15#39#0" expanded="true" />
               </folding>
@@ -409,7 +410,11 @@
       <created>1379324987194</created>
       <updated>1379324987194</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="test">
+      <created>1379325097097</created>
+      <updated>1379325097097</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -597,7 +602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/engine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="8" selection-start="1857" selection-end="1964" vertical-scroll-proportion="0.304">
+        <state line="92" column="76" selection-start="2548" selection-end="2548" vertical-scroll-proportion="0.8208">
           <folding>
             <element signature="e#15#39#0" expanded="true" />
           </folding>

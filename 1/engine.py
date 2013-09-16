@@ -90,7 +90,7 @@ class AppFactory(object):
                 conf.homepage = request.form['homepage']
             return 'Success'
 
-        return before_request, teardown_request, default_index, init_Config
+        return before_request, teardown_request, init_Config #,default_index
 
     def Register_Logging(self):
         pass
