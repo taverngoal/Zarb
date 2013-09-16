@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 #coding:utf8
 
-import time
 import urllib
 
-import common 
-from httpc import *
-from object import Object, Superfile
+from app.modules.pybcs.httpc import *
+from app.modules.pybcs.object import Object, Superfile
 
 try:
     import json

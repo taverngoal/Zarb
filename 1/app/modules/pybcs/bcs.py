@@ -2,19 +2,17 @@
 #coding:utf8
 
 import urllib
-import re, sys, os
-
-import time
-import hmac, base64, hashlib
+import hmac
+import base64
+import hashlib
 
 try:
     import json
 except:
     import simplejson as json
 
-import common
-from bucket import Bucket
-from httpc import *
+from app.modules.pybcs.bucket import Bucket
+from app.modules.pybcs.httpc import *
 
 class BCS:
     def __init__(self, host, ak , sk, httpclient_class=None):

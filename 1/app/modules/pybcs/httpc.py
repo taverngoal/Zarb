@@ -1,17 +1,9 @@
 #!/usr/bin/env python
 #coding:utf8
 import urllib
-import urllib2
 import httplib
-import cookielib
 import os
-import re
-import sys
-import time
 import copy
-import hmac
-import base64
-import hashlib
 import mimetypes
 
 try:
@@ -27,7 +19,7 @@ except:
 
 from cStringIO import StringIO
 from urlparse import urlparse
-from common import shorten
+from app.modules.pybcs.common import shorten
 
 READ_BODY_TO_MEMORY = 1024*1024 # 1M
 
@@ -432,7 +424,6 @@ def _get_content_type(filename):
     return mimetypes.guess_type(filename)[0] or 'application/octet-stream'
 
 def select_best_httpc():
-    import platform
     try:
         import pycurl
         logger.debug('use pycurl httpclient')

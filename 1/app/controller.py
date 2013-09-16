@@ -1,7 +1,6 @@
 # coding:utf8
 __author__ = 'Tavern'
-from flask import Blueprint, url_for, render_template, request, jsonify
-from models import *
+from flask import Blueprint, render_template
 
 abc = Blueprint('abc', __name__, url_prefix='/app', static_folder='static')
 

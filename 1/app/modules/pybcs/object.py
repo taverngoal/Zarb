@@ -2,11 +2,10 @@
 #coding:utf8
 
 import os
-
-import common
-from common import FileSystemException
 import urllib
-from httpc import *
+
+from common import FileSystemException
+from app.modules.pybcs.httpc import *
 
 class NameException(Exception):
     def __init__(self, msg=None):

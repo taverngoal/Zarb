@@ -1,6 +1,7 @@
 # coding:utf-8
 from hashlib import sha1
 from flask import Flask, render_template, url_for, redirect, request, g
+from app import modules as C
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -66,8 +67,7 @@ class AppFactory(object):
         @self.__app__.before_request
         def before_request():
             if not hasattr(g, 'title'):
-                from modules.config import Config
-                g.title = Config().title.value if Config().title else u'还没设置'
+                g.title = u'还没设置'
 
         @self.__app__.teardown_request
         def teardown_request(exception):
@@ -82,7 +82,6 @@ class AppFactory(object):
             if request.method == 'GET':
                 return render_template('init.html')
             else:
-                import modules.config as C
 
                 conf = C.Config()
                 conf.title = request.form['title']
