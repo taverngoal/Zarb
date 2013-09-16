@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller.py" afterPath="$PROJECT_DIR$/app/controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324862780" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324962367" ignored="false" />
     <file path="/a.dummy" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324163982" ignored="false" />
     <file path="/config.py" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324608069" ignored="false" />
     <file path="/__init__.py" changelist="dd7ecbd2-50a8-42dc-8fd9-5b09262cd45a" time="1379324723213" ignored="false" />
@@ -44,7 +43,7 @@
       <file leaf-file-name="controller.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="252" selection-end="252" vertical-scroll-proportion="0.41707316">
+            <state line="4" column="90" selection-start="172" selection-end="172" vertical-scroll-proportion="0.18536586">
               <folding />
             </state>
           </provider>
@@ -391,7 +390,11 @@
       <created>1379324864307</created>
       <updated>1379324864307</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="test">
+      <created>1379324963817</created>
+      <updated>1379324963817</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -579,7 +582,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="252" selection-end="252" vertical-scroll-proportion="0.41707316">
+        <state line="4" column="90" selection-start="172" selection-end="172" vertical-scroll-proportion="0.18536586">
           <folding />
         </state>
       </provider>
