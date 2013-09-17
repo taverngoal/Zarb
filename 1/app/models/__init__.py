@@ -1,3 +1,6 @@
 # coding:utf8
 __author__ = 'Tavern'
-import comment, photo, user, album
+from comment import *
+from photo import *
+from user import *
+from album import *

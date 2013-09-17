@@ -1,6 +1,6 @@
 # coding:utf8
 __author__ = 'Tavern'
-from config.engine import db
+from config.engine import db, login_manager
 
 
 class obj_user(db.Model):
@@ -19,3 +19,13 @@ class obj_user(db.Model):
         self.nick = nick
         self.password = psd
         self.powerid = powerid
+
+    @staticmethod
+    @login_manager.user_loader
+    def load_user(userid):
+        return obj_user.get(userid)
+
+    @staticmethod
+    def Authorize(nick, psd):
+
+        return

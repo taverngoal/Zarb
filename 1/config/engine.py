@@ -1,13 +1,15 @@
 # coding:utf-8
 from hashlib import sha1
-from flask import Flask, render_template, request, g
+from flask import Flask, render_template, request, g, redirect, url_for
 from app import modules as C
 from ext.flask_sqlalchemy import SQLAlchemy
+from .login import login_manager
 
 
 class AppFactory(object):
     def __init__(self):
         self.__app__ = Flask(__name__)
+        self.__app__.debug = True
 
     def Register_Blueprints(self, blueprints=None):
         """
@@ -32,6 +34,7 @@ class AppFactory(object):
 
         """
         self.db = SQLAlchemy(self.__app__)
+        login_manager.init_app(self.__app__)
 
     def Register_ErrorHandler(self, e404='404.html', e500='500.html', e403='403.html'):
         """
@@ -108,8 +111,6 @@ factory = AppFactory()
 app = factory.CreateApp()
 db = factory.db
 
-
-# from tavern.views import tavern
 from app.controller import abc
 
 factory.Register_Blueprints([abc])
