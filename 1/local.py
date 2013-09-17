@@ -1,5 +1,5 @@
 # coding:utf8
-from app import app
+from c import app
 
 __author__ = 'Tavern'
 
