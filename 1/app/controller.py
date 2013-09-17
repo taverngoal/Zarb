@@ -1,19 +1,19 @@
 # coding:utf8
 __author__ = 'Tavern'
-from flask import Blueprint, render_template, flash, redirect, url_for
+from flask import Blueprint, render_template, flash, redirect, url_for, __version__
 # from flask.ext.WTF import *
 from models import *
 from ext.flask_login import login_user, login_required
 
 from models import *
 
-abc = Blueprint('abc', __name__, static_folder='static', static_url_path='/abc/static', template_folder='templates')
+abc = Blueprint('abc', __name__, static_folder='static', template_folder='templates')
 
 
 @abc.route('/login')
 def login():
     # flash("Logged in successfully.")
-    return render_template('app/login.html')
+    return render_template('app/login.html', aa = __version__)
 
 
 @abc.route('/test')
@@ -30,6 +30,7 @@ def signin(nick=None, psd=None):
         return redirect(url_for('abc.index'))
     else:
         return redirect(url_for('abc.login'))
+
 
 @abc.route('/')
 @login_required
