@@ -7,7 +7,7 @@
     </list>
     <ignored path="1.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379423208807" ignored="false" />
+    <file path="/Dummy.txt" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379423334929" ignored="false" />
     <file path="/_layout.html" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379333790029" ignored="false" />
     <file path="/comment.py" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379347801768" ignored="false" />
     <file path="/user.py" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379398315519" ignored="false" />
@@ -66,10 +66,8 @@
       <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.25745258">
-              <folding>
-                <element signature="e#38#61#0" expanded="true" />
-              </folding>
+            <state line="15" column="15" selection-start="295" selection-end="295" vertical-scroll-proportion="0.15447155">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -489,7 +487,11 @@
       <created>1379423210988</created>
       <updated>1379423210988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="improved">
+      <created>1379423336423</created>
+      <updated>1379423336423</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -689,10 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.25745258">
-          <folding>
-            <element signature="e#38#61#0" expanded="true" />
-          </folding>
+        <state line="15" column="15" selection-start="295" selection-end="295" vertical-scroll-proportion="0.15447155">
+          <folding />
         </state>
       </provider>
     </entry>
