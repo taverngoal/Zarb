@@ -1,8 +1,8 @@
 #! -*- coding:UTF-8 -*-
-from app.modules import pybcs
+from old.app.modules import pybcs
 
 __author__ = 'Tavern'
-from app.modules.pybcs.object import Object
+from old.app.modules.pybcs.object import Object
 
 
 class Storage:

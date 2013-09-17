@@ -4,8 +4,8 @@
 import os
 import urllib
 
-from common import FileSystemException
-from app.modules.pybcs.httpc import *
+from old.app.modules.pybcs.common import FileSystemException
+from old.app.modules.pybcs.httpc import *
 
 class NameException(Exception):
     def __init__(self, msg=None):

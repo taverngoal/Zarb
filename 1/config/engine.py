@@ -1,9 +1,7 @@
 # coding:utf-8
-from hashlib import sha1
-from flask import Flask, render_template, request, g, redirect, url_for
-from app import modules as C
+from flask import Flask, render_template, g
 from ext.flask_sqlalchemy import SQLAlchemy
-from .login import login_manager
+from .config.login import login_manager
 
 
 class AppFactory(object):
@@ -98,6 +96,6 @@ factory = AppFactory()
 app = factory.CreateApp()
 db = factory.db
 
-from app.controller import abc
+# from app.controller import abc
 
-factory.Register_Blueprints([abc])
+# factory.Register_Blueprints([abc])

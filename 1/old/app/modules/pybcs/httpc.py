@@ -19,7 +19,7 @@ except:
 
 from cStringIO import StringIO
 from urlparse import urlparse
-from app.modules.pybcs.common import shorten
+from old.app.modules.pybcs.common import shorten
 
 READ_BODY_TO_MEMORY = 1024*1024 # 1M
 

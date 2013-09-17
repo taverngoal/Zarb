@@ -1,7 +1,6 @@
-from config import engine
+# coding:utf8
+from app import app
 
-engine.factory.Register_Config()
-engine.db.create_all()
-app = engine.app
-if __name__ == '__main__':
-    engine.app.run('0.0.0.0', 3000)
+__author__ = 'Tavern'
+
+app.run('0.0.0.0', 3000)

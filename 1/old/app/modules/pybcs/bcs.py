@@ -11,8 +11,8 @@ try:
 except:
     import simplejson as json
 
-from app.modules.pybcs.bucket import Bucket
-from app.modules.pybcs.httpc import *
+from old.app.modules.pybcs.bucket import Bucket
+from old.app.modules.pybcs.httpc import *
 
 class BCS:
     def __init__(self, host, ak , sk, httpclient_class=None):

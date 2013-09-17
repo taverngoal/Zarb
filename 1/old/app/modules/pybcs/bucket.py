@@ -3,8 +3,8 @@
 
 import urllib
 
-from app.modules.pybcs.httpc import *
-from app.modules.pybcs.object import Object, Superfile
+from old.app.modules.pybcs.httpc import *
+from old.app.modules.pybcs.object import Object, Superfile
 
 try:
     import json
