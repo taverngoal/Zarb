@@ -24,5 +24,10 @@ def login():
     return 'login'
 
 
+@app.route('/test')
+def test():
+    return 'asfasdfasdf'
+
+
 
 
