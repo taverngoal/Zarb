@@ -1,6 +1,6 @@
 # coding:utf8
 __author__ = 'Tavern'
-from flask.ext.login import *
+from ext.flask_login import *
 from flask import redirect, url_for
 
 login_manager = LoginManager()

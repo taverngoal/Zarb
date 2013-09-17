@@ -3,7 +3,7 @@ __author__ = 'Tavern'
 from flask import Blueprint, render_template, flash, redirect, url_for
 # from flask.ext.WTF import *
 from models import *
-from flask.ext.login import login_user, login_required
+from ext.flask_login import login_user, login_required
 
 from models import *
 
