@@ -27,6 +27,7 @@ def login():
 def test():
     return 'asfasdfasdf'
 
+app.run('0.0.0.0', 3000)
 
 
 

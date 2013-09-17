@@ -80,20 +80,7 @@ class AppFactory(object):
         # def default_index():
         #     return redirect(url_for('abc.index'))
 
-        @self.__app__.route('/init', methods=['GET', 'POST'])
-        def init_Config():
-            if request.method == 'GET':
-                return render_template('init.html')
-            else:
-
-                conf = C.Config()
-                conf.title = request.form['title']
-                conf.adminuser = request.form['adminuser']
-                conf.adminpsd = sha1(request.form['adminpsd']).hexdigest()
-                conf.homepage = request.form['homepage']
-            return 'Success'
-
-        return before_request, teardown_request, init_Config #,default_index
+        return before_request, teardown_request,  #,default_index
 
     def Register_Logging(self):
         pass

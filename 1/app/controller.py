@@ -7,7 +7,7 @@ from ext.flask_login import login_user, login_required
 
 from models import *
 
-abc = Blueprint('abc', __name__, static_folder='static', template_folder='templates')
+abc = Blueprint('abc', __name__, static_folder='static', static_url_path='/abc/static', template_folder='templates')
 
 
 @abc.route('/login')
