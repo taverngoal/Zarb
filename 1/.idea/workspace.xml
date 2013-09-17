@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d03f807-b7fd-4589-af94-cd89b770cc84" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.conf" afterPath="$PROJECT_DIR$/app.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.py" afterPath="$PROJECT_DIR$/index.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.py" afterPath="$PROJECT_DIR$/local.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/login.py" afterPath="$PROJECT_DIR$/config/login.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379424060673" ignored="false" />
+    <file path="/Dummy.txt" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379424170908" ignored="false" />
     <file path="/_layout.html" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379333790029" ignored="false" />
     <file path="/comment.py" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379347801768" ignored="false" />
     <file path="/user.py" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379398315519" ignored="false" />
@@ -19,7 +17,7 @@
     <file path="/controller.py" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379402352033" ignored="false" />
     <file path="/a.dummy" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379395647718" ignored="false" />
     <file path="/engine.py" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379402109621" ignored="false" />
-    <file path="/login.py" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379401057345" ignored="false" />
+    <file path="/login.py" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379424216076" ignored="false" />
     <file path="/start_script.py" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379399042567" ignored="false" />
     <file path="/login.html" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379401718806" ignored="false" />
     <file path="/500.html" changelist="4d03f807-b7fd-4589-af94-cd89b770cc84" time="1379400532448" ignored="false" />
@@ -86,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.conf" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.conf" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="13" selection-start="23" selection-end="23" vertical-scroll-proportion="0.031666666">
+            <state line="1" column="13" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="42" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.31666666">
               <folding>
                 <element signature="e#36#65#0" expanded="true" />
               </folding>
@@ -155,11 +153,11 @@
         <option value="$PROJECT_DIR$/templates/app/login.html" />
         <option value="$PROJECT_DIR$/index2.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/config/login.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/index.py" />
         <option value="$PROJECT_DIR$/local.py" />
         <option value="$PROJECT_DIR$/app.conf" />
+        <option value="$PROJECT_DIR$/config/login.py" />
       </list>
     </option>
   </component>
@@ -501,7 +499,11 @@
       <created>1379424062098</created>
       <updated>1379424062098</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="improved">
+      <created>1379424172693</created>
+      <updated>1379424172693</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -648,34 +650,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#15#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/app/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="9" selection-start="286" selection-end="286" vertical-scroll-proportion="0.60932946">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#36#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -698,8 +675,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="23" selection-end="23" vertical-scroll-proportion="0.031666666">
+        <state line="1" column="13" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#15#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.31666666">
+          <folding>
+            <element signature="e#36#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
