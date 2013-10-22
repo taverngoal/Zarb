@@ -1,14 +1,16 @@
 # coding:utf8
 from flask import Flask, render_template, __version__, redirect, url_for
 from config.login import login_manager
+from ext.flask_sqlalchemy import SQLAlchemy
 #from ext.flask_login import login_required, login_user,
 # from models import obj_user
 
 __author__ = 'Tavern'
 
 app = Flask(__name__)
-app.secret_key = '!#!@@%YHFXHNGFHSGAWT@^$%UIJNBVSAZ'
+app.secret_key = '!#!@@%asdFDfSDFdgFDdgGgGsfg@^$%GdgSG'
 login_manager.init_app(app)
+db = SQLAlchemy(app)
 app.debug = True
 
 global current_user, controller_name, action_name
