@@ -1,0 +1,17 @@
+body{ font-size: 12px; color:#444; margin:0; padding: 0;
+    background-image: url('../images/grey.png');
+    font-family:"Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, simsun, sans-serif;
+}
+
+#index {  }
+    #index .top_banner { margin-bottom: 20px }
+
+#space_login { width: 1170px;  }
+
+#user_zone { padding-top: 30px; }
+
+div.thumbnail { margin-bottom: 30px;}
+
+.tool-bar { font-size: 14px}
+
+.error-md { line-height: 32px; }

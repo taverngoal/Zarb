@@ -1,7 +1,7 @@
 # coding:utf8
 from flask import Flask, render_template, __version__, redirect, url_for
 from config.login import login_manager
-from ext.flask_login import login_required, login_user
+#from ext.flask_login import login_required, login_user,
 # from models import obj_user
 
 __author__ = 'Tavern'
@@ -11,6 +11,7 @@ app.secret_key = '!#!@@%YHFXHNGFHSGAWT@^$%UIJNBVSAZ'
 login_manager.init_app(app)
 app.debug = True
 
+global current_user, controller_name, action_name
 
 @app.route('/login')
 def login():
@@ -36,6 +37,6 @@ def signin(nick=None, psd=None):
 
 
 @app.route('/')
-@login_required
+#@login_required
 def index():
     return render_template('app/index.html')
