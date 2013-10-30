@@ -2,6 +2,7 @@
 from flask import Flask, render_template, __version__, redirect, url_for
 from config.login import login_manager
 from ext.flask_sqlalchemy import SQLAlchemy
+from ext.flask_assets import Environment, Bundle
 
 __author__ = 'Tavern'
 
@@ -10,6 +11,7 @@ app.config.from_object('config.config')         # 注册配置文件
 app.secret_key = '!#!@@%asdFDfSDFdgFDdgGgGsfg@^$%GdgSG'     # 设置COOKIE密钥
 login_manager.init_app(app)                     # 启动ext.login组件
 db = SQLAlchemy(app)                            # 启动SQLAlchemy组件
+assets = Environment(app)
 app.debug = True                                # 设置debug模式
 import models                                  # 加载所有模型
 db.create_all()                                 # 创建数据库所有表
@@ -29,8 +31,8 @@ def test():
     return render_template('app/test.html')
 
 
-@app.route('/signin', methods=['post'])
-def signin(nick=None, psd=None):
+@app.route('/sign_in', methods=['post'])
+def sign_in(nick=None, psd=None):
 # user = obj_user.query.filter_by(nick=nick, password=psd).first()
 # user
 # if user:
@@ -39,6 +41,12 @@ def signin(nick=None, psd=None):
 #     return redirect(url_for('abc.index'))
 # else:
     return redirect(url_for('login'))
+
+
+@app.route('/sign_up')
+def sign_up():
+    return render_template('app/sign_up')
+    pass
 
 
 @app.route('/')

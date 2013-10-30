@@ -1,0 +1,46 @@
+
+<html>
+<head>
+  <title>ABC - 注册</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <script type="text/javascript">
+      $(function(){
+          $("#space_sign_up").vertical_center();
+      })
+  </script>
+</head>
+<body>
+<section id="space_sign_up" class="container vertical">
+  <div class="col-lg-6 col-lg-offset-3">
+    <% if flash[:alert] %>
+        <div class="alert alert-danger fade in">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+          <strong>错误</strong> <%= flash[:alert] %>
+        </div>
+    <% end %>
+    <%= simple_form_for(resource, :as => resource_name,:wrapper=>:addon_hint, :url => registration_path(resource_name)) do |f| %>
+        <%= f.error_notification %>
+
+        <div class="form-inputs">
+          <%= f.input :email, label: false, :required => true, :autofocus => true, input_html:{ class: 'form-control', placeholder:'Email'}%> <br/>
+          <%= f.input :name ,label: false, input_html:{ class: 'form-control', placeholder:'姓名'}%>             <br/>
+          <%= f.input :password, label: false,:required => true , input_html:{ class: 'form-control', placeholder:'密码'}%>   <br/>
+          <%= f.input :password_confirmation, label: false,:required => true , input_html:{ class: 'form-control', placeholder:'确认密码'}%>   <br/>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, "注册",  class: 'btn btn-primary', :'data-loading-text'=> "注册中..."%>
+          <%= link_to '返回登录', {:controller => 'devise/sessions', :action => 'new'}, {:class => 'btn btn-default'} %>
+        </div>
+    <% end %>
+
+    <!--<%= render "devise/shared/links" %>-->
+  </div>
+</section>
+</body>
+</html>
