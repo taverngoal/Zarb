@@ -13,7 +13,7 @@ class obj_album(db.Model):
     update_at = db.Column('update_at', db.DateTime)
     face_id = db.Column('face_id', db.Integer)
     enable = db.Column('enable', db.Boolean)
-    show = db.Column('show', db.show)
+    show = db.Column('show', db.Boolean)
     faceurl = db.Column('faceurl', db.CHAR(255))
     photo_num = db.Column('photo_num', db.Integer)
     user_id = db.Column('user_id', db.Integer, db.ForeignKey('abc_users.id'), nullable=False)

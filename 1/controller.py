@@ -2,8 +2,7 @@
 from flask import Flask, render_template, __version__, redirect, url_for
 from config.login import login_manager
 from ext.flask_sqlalchemy import SQLAlchemy
-#from ext.flask_login import login_required, login_user,
-# from models import obj_user
+from ext.flask_bcrypt import Bcrypt
 
 __author__ = 'Tavern'
 
@@ -12,7 +11,11 @@ app.config.from_object('config.config')         # 注册配置文件
 app.secret_key = '!#!@@%asdFDfSDFdgFDdgGgGsfg@^$%GdgSG'     # 设置COOKIE密钥
 login_manager.init_app(app)                     # 启动ext.login组件
 db = SQLAlchemy(app)                            # 启动SQLAlchemy组件
+bcrypt = Bcrypt(app)                            # 加密组件
 app.debug = True                                # 设置debug模式
+import models                                  # 加载所有模型
+db.create_all()                                 # 创建数据库所有表
+
 
 global current_user, controller_name, action_name
 
