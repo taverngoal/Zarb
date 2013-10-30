@@ -1,6 +1,7 @@
 # coding:utf8
 __author__ = 'Tavern'
-from config.engine import db, login_manager
+
+from controller import db, login_manager
 
 
 class obj_user(db.Model):

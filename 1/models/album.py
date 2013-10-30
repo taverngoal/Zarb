@@ -1,6 +1,6 @@
 # coding:utf8
 __author__ = 'Tavern'
-from config.engine import db
+from controller import db
 
 
 class obj_album(db.Model):

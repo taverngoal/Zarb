@@ -2,7 +2,7 @@
 __author__ = 'Tavern'
 from datetime import datetime
 
-from config.engine import db
+from controller import db
 
 
 class obj_comments(db.Model):

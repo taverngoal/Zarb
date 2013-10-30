@@ -1,5 +1,5 @@
 # coding:utf8
-from c import app
+from controller import app
 
 __author__ = 'Tavern'
 

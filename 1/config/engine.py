@@ -1,7 +1,7 @@
 # coding:utf-8
 from flask import Flask, render_template, g
 from ext.flask_sqlalchemy import SQLAlchemy
-from .config.login import login_manager
+from .login import login_manager
 
 
 class AppFactory(object):
