@@ -1,10 +1,13 @@
 body{ font-size: 12px; color:#444; margin:0; padding: 0;
-    background-image: url('../images/grey.png');
     font-family:"Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, simsun, sans-serif;
 }
+body.forntEnd {    background-image: url('../images/bg.gif');}
+body.backEnd {    background-image: url('../images/grey.png');}
 
 #index {  }
-    #index .top_banner { margin-bottom: 20px }
+    /*#index .top_banner { margin-bottom: 20px }*/
+.top_banner { height: 170px; background-image: url('../images/hd_bg.gif')}
+
 
 #space_login { width: 1170px;  }
 
@@ -17,3 +20,20 @@ div.thumbnail { margin-bottom: 30px;}
 .error-md { line-height: 32px; }
 
 #admin { padding:20px 0; }
+
+#homePosts .panel { margin-bottom: 30px; height: 250px; text-overflow: ellipsis;white-space: nowrap; overflow:hidden }
+#homePosts .panel .panel-title { text-overflow: ellipsis;white-space: nowrap; overflow:hidden;  font-family: 'microsoft yahei ui',sans-serif; font-size: 24px;  }
+#homePosts .panel .panel-title i{ color:#336699; position: relative; top:4px ; overflow: visible }
+#homePosts .panel .panel-collapse { height: 155px}
+#homePosts .panel .panel-footer {  position: relative; height: 50px; border-top: #ddd solid 1px; background-color: #fafafa; color: #aaa }
+#homePosts .panel .panel-heading {background-color: #fff; height: 50px; line-height: 50px;}
+
+.reveal-animation.ng-enter {
+ -webkit-transition: 500ms linear all; /* Safari/Chrome */
+ transition: 500ms linear all; /* All other modern browsers and IE10+ */
+ opacity: 0;
+}
+
+.reveal-animation.ng-enter.ng-enter-active {
+ opacity: 1;
+}

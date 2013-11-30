@@ -9,29 +9,33 @@
     <script type="application/javascript" src="{{ url_for('static', filename='js/angular/angular.min.js') }}"></script>
     <script type="application/javascript"
             src="{{ url_for('static', filename='js/angular/angular-route.min.js') }}"></script>
+    <script type="application/javascript"
+            src="{{ url_for('static', filename='js/angular/angular-resource.min.js') }}"></script>
+    <script type="application/javascript"
+            src="{{ url_for('static', filename='js/angular/angular-sanitize.min.js') }}"></script>
+    <script type="application/javascript"
+            src="{{ url_for('static', filename='js/angular/angular-animate.min.js') }}"></script>
     <script type="application/javascript" src="{{ url_for('static', filename='js/frontController.js') }}"></script>
     <script type="application/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </head>
-<body>
+<body class="forntEnd">
+<div class="top_banner">
+</div>
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">ABC</a>
-        </div>
+        {#        <div class="navbar-header">#}
+        {#            <a class="navbar-brand" href="#">ABC</a>#}
+        {#        </div>#}
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li {{ 'class="active"' if controller_name=='general' and action_name=='index' else '' }} ><a href="#">Home</a>
+            <ul class="nav navbar-nav" style="font-size: 14px">
+                <li><a href="#"><i class="glyphicon glyphicon-home"></i> 首页</a>
                 </li>
-                <li><a href="#">More</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-book"></i>日志</a>
+                </li>
+                <li><a href="#"><i class="glyphicon glyphicon-road"></i>更多</a></li>
                 <!--<li class="dropdown">-->
                 <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>-->
                 <!--<ul class="dropdown-menu">-->
@@ -56,9 +60,10 @@
     {% endblock %}
 </section>
 <section class="footer">
-    <div class="alert alert-success alert-dismissable hide" >
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div>
-        <div class="content"></div>
+    <div class="alert alert-success alert-dismissable hide">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    </div>
+    <div class="content"></div>
     <hr/>
     <div class="text-center">2013 &copy; TavernGoal</div>
 </section>

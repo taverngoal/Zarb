@@ -1,0 +1,19 @@
+<div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <i class="glyphicon glyphicon-record"></i> {{ post.title }}
+            </h4>
+        </div>
+        <div class="panel-collapse in">
+            <div class="panel-body" ng-bind-html="post.content">
+            </div>
+        </div>
+        <div class="panel-footer text-right">
+            <i class="glyphicon glyphicon-time"></i> {{ post.created_at }}
+            &nbsp;
+            <i class="glyphicon glyphicon-comment"></i> {{ post.comments }} &nbsp;
+            <i class="glyphicon glyphicon-eye-open"></i> {{ post.views }} &nbsp;
+        </div>
+    </div>
+</div>

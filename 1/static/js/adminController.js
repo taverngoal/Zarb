@@ -8,10 +8,10 @@ var app = angular.module('blog', ['ngRoute', 'blog.post', 'ngResource'])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/post/list', {
-                controller: 'blogPostListCTRL',
+                controller: 'postListCTRL',
                 templateUrl: '/static/templates/post/list.html'
             }).when('/post/new', {
-                controller: 'blogFormCTRL',
+                controller: 'postFormCTRL',
                 templateUrl: '/static/templates/post/form.html'
             }).when('/post/edit/:id', {
                 controller: 'deviceListCTRL',
@@ -19,24 +19,21 @@ var app = angular.module('blog', ['ngRoute', 'blog.post', 'ngResource'])
             });
     }]);
 
-var blog = angular.module('blog.post', [])
-    .factory('blogService', function ($resource) {
+var post = angular.module('blog.post', [])
+    .factory('postService', function ($resource) {
         return $resource('/post/:id', {'id': '@id'}, {
-            getlist: { method: 'get', isArray:false, url: '/post'}
+            getlist: { method: 'get', isArray: false, url: '/post'}
         });
     })
-    .controller('blogPostListCTRL', ['$scope', 'blogService', '$http', function ($scope, blogService, $http) {
-//        $http.get("/post", {}).success(function (content) {
-//            $scope.posts = content.posts
-//        });
-         blogService.getlist(function(content){
+    .controller('postListCTRL', ['$scope', 'postService', '$http', function ($scope, postService, $http) {
+        postService.getlist(function (content) {
             $scope.posts = content.posts
         });
     }])
-    .controller('blogFormCTRL', ['$scope', 'blogService', '$location', function ($scope, blogService, $location) {
+    .controller('postFormCTRL', ['$scope', 'postService', '$location', function ($scope, postService, $location) {
         var editor = new UE.ui.Editor();
         editor.render("postNew");
-        $scope.post = new blogService();
+        $scope.post = new postService();
 
         $scope.submit = function () {
             $scope.post.content = editor.getContent();

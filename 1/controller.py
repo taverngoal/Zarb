@@ -41,7 +41,8 @@ def sign_in(nick=None, psd=None):
 
 @app.route('/')
 def index():
-    return render_template('app/index.html')
+    posts = obj_post.query.all()
+    return render_template('app/index.html', posts=posts)
 
 
 @app.route('/admin')
@@ -51,8 +52,6 @@ def admin():
 
 @app.route('/post', methods=['get'])
 def post_list():
-    list = [x for x in obj_post.query.all()]
-
     return jsonify(posts=[i.serialize for i in obj_post.query.all()])
 
 
@@ -64,6 +63,12 @@ def post_add():
     new_post.title = post.get('title', None)
     db.session.add(new_post)
     return jsonC({'success': True})
+
+
+@app.route('/post/<int:id>', methods=['get'])
+def post_get(id):
+    obj_post.query.get(id)
+    return jsonify(obj_post.query.get(id).serialize)
 
 
 def jsonC(obj):

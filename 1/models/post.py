@@ -1,6 +1,5 @@
 # coding:utf-8
 from datetime import datetime
-
 __author__ = 'tavern'
 
 from controller import db
@@ -12,9 +11,10 @@ class obj_post(db.Model):
     id = db.Column('id', db.Integer, primary_key=True)
     title = db.Column('title', db.CHAR(255), nullable=False)
     content = db.Column('content', db.TEXT, nullable=False)
-    tags = db.Column('tags', db.String(255), nullable=True)
+    tags = db.Column('tags', db.String(255), nullable=True, default='')
     attchments = db.Column('attchments', db.String(255), nullable=True)
-    views = db.Column('views', db.Integer, nullable=True)
+    views = db.Column('views', db.Integer, nullable=True, default=0)
+    comments = db.Column('comments', db.Integer, nullable=True, default=0)
     created_at = db.Column('created_at', db.DateTime, default=datetime.now())
     update_at = db.Column('update_at', db.DateTime)
 
@@ -24,6 +24,7 @@ class obj_post(db.Model):
             'id': self.id,
             'title': self.title,
             'content': self.content,
+            'comments': self.comments,
             'tags': self.tags,
             'attchments': self.attchments,
             'views': self.views,
