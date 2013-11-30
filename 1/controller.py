@@ -1,6 +1,7 @@
 # coding:utf8
-from flask import Flask, render_template, __version__, redirect, url_for
+from flask import Flask, render_template, __version__, redirect, url_for, request
 from ext.flask_sqlalchemy import SQLAlchemy
+import  json
 
 __author__ = 'Tavern'
 
@@ -32,3 +33,21 @@ def sign_in(nick=None, psd=None):
 @app.route('/')
 def index():
     return render_template('app/index.html')
+
+
+@app.route('/admin')
+def admin():
+    return render_template('app/admin.html')
+
+
+@app.route('/post', methods=['get'])
+def post_list():
+
+    return json.dumps(obj_post.query.all())
+
+
+@app.route('/post', methods=['post'])
+def post_add():
+    pp = request.form['title']
+    print pp
+    return  json.dumps({ 'sucess': True })
