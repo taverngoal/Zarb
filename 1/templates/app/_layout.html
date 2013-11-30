@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html ng-app="blog">
 <head>
-  <title>ABC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
+    <title>ABC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
     <script type="application/javascript" src="{{ url_for('static', filename='js/jquery-1.10.2.min.js') }}"></script>
     <script type="application/javascript" src="{{ url_for('static', filename='js/angular/angular.min.js') }}"></script>
-    <script type="application/javascript" src="{{ url_for('static', filename='js/angular/angular-route.min.js') }}"></script>
+    <script type="application/javascript"
+            src="{{ url_for('static', filename='js/angular/angular-route.min.js') }}"></script>
     <script type="application/javascript" src="{{ url_for('static', filename='js/frontController.js') }}"></script>
     <script type="application/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">ABC</a>
-  </div>
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">ABC</a>
+        </div>
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav">
-      <li {{ 'class="active"' if controller_name=='general' and action_name=='index' else '' }} ><a href="#">Home</a></li>
-      <li><a href="#">More</a></li>
-      <!--<li class="dropdown">-->
-        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>-->
-        <!--<ul class="dropdown-menu">-->
-          <!--<li><a href="#">Action</a></li>-->
-          <!--<li><a href="#">Another action</a></li>-->
-          <!--<li><a href="#">Something else here</a></li>-->
-          <!--<li class="divider"></li>-->
-          <!--<li><a href="#">Separated link</a></li>-->
-          <!--<li class="divider"></li>-->
-          <!--<li><a href="#">One more separated link</a></li>-->
-        <!--</ul>-->
-      <!--</li>-->
-    </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li {{ 'class="active"' if controller_name=='general' and action_name=='index' else '' }} ><a href="#">Home</a>
+                </li>
+                <li><a href="#">More</a></li>
+                <!--<li class="dropdown">-->
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>-->
+                <!--<ul class="dropdown-menu">-->
+                <!--<li><a href="#">Action</a></li>-->
+                <!--<li><a href="#">Another action</a></li>-->
+                <!--<li><a href="#">Something else here</a></li>-->
+                <!--<li class="divider"></li>-->
+                <!--<li><a href="#">Separated link</a></li>-->
+                <!--<li class="divider"></li>-->
+                <!--<li><a href="#">One more separated link</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+            </ul>
 
-  </div><!-- /.navbar-collapse -->
-      </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
 </nav>
 <section class="container">
     {% block content %}
@@ -53,8 +56,11 @@
     {% endblock %}
 </section>
 <section class="footer">
-  <hr />
-  <div class="text-center">2013 &copy; TavernGoal</div>
+    <div class="alert alert-success alert-dismissable hide" >
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></div>
+        <div class="content"></div>
+    <hr/>
+    <div class="text-center">2013 &copy; TavernGoal</div>
 </section>
 </body>
 </html>

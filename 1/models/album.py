@@ -16,3 +16,16 @@ class obj_album(db.Model):
     show = db.Column('show', db.Boolean)
     faceurl = db.Column('faceurl', db.CHAR(255))
     photo_num = db.Column('photo_num', db.Integer)
+
+    @property
+    def serialize(self):
+        return {
+            'id': self.id,
+            'title': self.title,
+            'content': self.content,
+            'tags': self.tags,
+            'attchments': self.attchments,
+            'views': self.views,
+            'created_at': self.created_at,
+            'update_at': self.update_at
+        }

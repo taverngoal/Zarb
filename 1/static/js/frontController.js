@@ -3,6 +3,6 @@
  */
 
 var app = angular.module('blog', [])
-    .controller('generalCTRL',['$scope',function($scope){
+    .controller('generalCTRL', ['$scope', function ($scope) {
 
     }]);

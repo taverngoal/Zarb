@@ -1,7 +1,10 @@
 # coding:utf8
-from flask import Flask, render_template, __version__, redirect, url_for, request
+import json
+
+from flask import Flask, render_template, __version__, redirect, url_for, request, jsonify
+
 from ext.flask_sqlalchemy import SQLAlchemy
-import  json
+
 
 __author__ = 'Tavern'
 
@@ -11,7 +14,13 @@ app.secret_key = '!#!@@%asdFDfSDFdgFDdgGgGsfg@^$%GdgSG'     # 设置COOKIE密钥
 db = SQLAlchemy(app)                            # 启动SQLAlchemy组件
 app.debug = True                                # 设置debug模式
 from models import *                                 # 加载所有模型
+
 db.create_all()                                 # 创建数据库所有表
+
+
+@app.teardown_request
+def teardown_request(exception):
+    db.session.commit()
 
 
 @app.route('/login')
@@ -42,12 +51,25 @@ def admin():
 
 @app.route('/post', methods=['get'])
 def post_list():
+    list = [x for x in obj_post.query.all()]
 
-    return json.dumps(obj_post.query.all())
+    return jsonify(posts=[i.serialize for i in obj_post.query.all()])
 
 
 @app.route('/post', methods=['post'])
 def post_add():
-    pp = request.form['title']
-    print pp
-    return  json.dumps({ 'sucess': True })
+    post = jsonC(request.data)
+    new_post = obj_post()
+    new_post.content = post.get('content', None)
+    new_post.title = post.get('title', None)
+    db.session.add(new_post)
+    return jsonC({'success': True})
+
+
+def jsonC(obj):
+    if isinstance(obj, dict):
+        return json.dumps(obj)
+    elif isinstance(obj, str):
+        return json.loads(obj)
+    else:
+        return None
