@@ -3,7 +3,7 @@ from datetime import datetime
 
 __author__ = 'Tavern'
 
-from controller import db, login_manager
+from controller import db
 
 
 class obj_user(db.Model):
@@ -25,15 +25,10 @@ class obj_user(db.Model):
     created_at = db.Column('created_at', db.DateTime, default=datetime.now())               # 创建时间
     updated_at = db.Column('updated_at', db.DateTime)                                       # 更新时间
 
-    def __init__(self, name, nick, psd, powerid, id=None):
+    def __init__(self, name, email, psd):
+        import hashlib
         if id:
             self.id = id
         self.name = name
-        self.nick = nick
-        self.password = psd
-        self.powerid = powerid
-
-    @staticmethod
-    @login_manager.user_loader
-    def load_user(userid):
-        return obj_user.get(userid)
+        self.email = email
+        self.encrypted_password = hashlib.md5(psd).hexdigest()

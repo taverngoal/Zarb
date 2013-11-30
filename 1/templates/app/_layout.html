@@ -40,31 +40,6 @@
         <!--</ul>-->
       <!--</li>-->
     </ul>
-    {% if current_user.is_active() %}
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>{{ 1 }} <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">进入我的空间</a></li>
-              <li><a href="#">退出登录</a></li>
-            </ul>
-          </li>
-        </ul>
-    {% else %}
-      <form class="navbar-form navbar-right" role="form" method="post" >
-        <div class="form-group">
-          <label class="sr-only" for="exampleInputEmail2">Email address</label>
-          <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Email" name="user[email]">
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="exampleInputPassword2">Password</label>
-          <input type="password" class="form-control input-sm" id="exampleInputPassword2" placeholder="Password" name="user[password]">
-        </div>
-        <button type="submit" class="btn btn-primary btn-sm" data-loading-text="登录中...">登录</button>
-        <a href="#" class="btn btn-info btn-sm">注册</a>
-      </form>
-    {% endif %}
-
 
   </div><!-- /.navbar-collapse -->
       </div>

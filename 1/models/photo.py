@@ -18,5 +18,4 @@ class obj_photo(db.Model):
     update_at = db.Column('update_at', db.DateTime)
     memo = db.Column('memo', db.TEXT(500))
     url = db.Column('url', db.CHAR(255))
-    user_id = db.Column('user_id', db.Integer, db.ForeignKey('abc_users.id'))
 

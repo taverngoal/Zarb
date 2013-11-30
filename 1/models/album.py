@@ -16,4 +16,3 @@ class obj_album(db.Model):
     show = db.Column('show', db.Boolean)
     faceurl = db.Column('faceurl', db.CHAR(255))
     photo_num = db.Column('photo_num', db.Integer)
-    user_id = db.Column('user_id', db.Integer, db.ForeignKey('abc_users.id'), nullable=False)

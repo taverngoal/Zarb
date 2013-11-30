@@ -3,11 +3,10 @@
 <head>
   <title>ABC - 注册</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
+    <script type="application/javascript" src="{{ url_for('static', filename='js/jquery-1.10.2.min.js') }}"></script>
+    <script type="application/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
   <script type="text/javascript">
       $(function(){
           $("#space_sign_up").vertical_center();
@@ -17,29 +16,43 @@
 <body>
 <section id="space_sign_up" class="container vertical">
   <div class="col-lg-6 col-lg-offset-3">
-    <% if flash[:alert] %>
+      {% if 0 %}
+{#          <% if flash[:alert] %>#}
         <div class="alert alert-danger fade in">
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
           <strong>错误</strong> <%= flash[:alert] %>
         </div>
-    <% end %>
-    <%= simple_form_for(resource, :as => resource_name,:wrapper=>:addon_hint, :url => registration_path(resource_name)) do |f| %>
-        <%= f.error_notification %>
+      {% endif %}
 
+    <form accept-charset="UTF-8" action="{{ url_for("sign_up") }}" class="simple_form new_user" id="new_user" method="post">
         <div class="form-inputs">
-          <%= f.input :email, label: false, :required => true, :autofocus => true, input_html:{ class: 'form-control', placeholder:'Email'}%> <br/>
-          <%= f.input :name ,label: false, input_html:{ class: 'form-control', placeholder:'姓名'}%>             <br/>
-          <%= f.input :password, label: false,:required => true , input_html:{ class: 'form-control', placeholder:'密码'}%>   <br/>
-          <%= f.input :password_confirmation, label: false,:required => true , input_html:{ class: 'form-control', placeholder:'确认密码'}%>   <br/>
+          <div class="email required user_email">
+              <div>
+                  <input autofocus="autofocus" class="string email required form-control" id="user_email" maxlength="255" name="email" placeholder="Email" required="required" size="50" type="email" value="">
+              </div>
+          </div>
+            <br>
+          <div class="string optional user_name">
+              <div>
+                  <input class="string optional form-control" id="user_name" maxlength="255" name="name" placeholder="姓名" size="50" type="text">
+              </div>
+          </div>             <br>
+          <div class="password required user_password">
+              <div>
+                  <input class="password required form-control" id="user_password" maxlength="128" name="password" placeholder="密码" required="required" size="50" type="password">
+              </div>
+          </div>   <br>
+          <div class="password required user_password_confirmation">
+              <div>
+                  <input class="password required form-control" id="user_password_confirmation" name="password_confirmation" placeholder="确认密码" required="required" size="50" type="password">
+              </div>
+          </div>   <br>
         </div>
-
         <div class="form-actions">
-          <%= f.button :submit, "注册",  class: 'btn btn-primary', :'data-loading-text'=> "注册中..."%>
-          <%= link_to '返回登录', {:controller => 'devise/sessions', :action => 'new'}, {:class => 'btn btn-default'} %>
+          <input class="btn btn-default btn btn-primary" data-loading-text="注册中..." name="commit" type="submit" value="注册">
+          <a href="{{ url_for('login') }}" class="btn btn-default">返回登录</a>
         </div>
-    <% end %>
-
-    <!--<%= render "devise/shared/links" %>-->
+    </form>
   </div>
 </section>
 </body>
