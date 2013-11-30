@@ -27,6 +27,6 @@ class obj_post(db.Model):
             'tags': self.tags,
             'attchments': self.attchments,
             'views': self.views,
-            'created_at': self.created_at,
-            'update_at': self.update_at
+            'created_at': self.created_at.local.strftime('%Y-%m-%d %H:%M:%S'),
+            'update_at': self.update_at.strftime('%Y-%m-%d %H:%M:%S')
         }

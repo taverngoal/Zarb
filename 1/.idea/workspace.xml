@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d03f807-b7fd-4589-af94-cd89b770cc84" name="Default" comment="improved">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/app/_backLayout.html" afterPath="$PROJECT_DIR$/templates/app/_backLayout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/app/_layout.html" afterPath="$PROJECT_DIR$/templates/app/_layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/adminController.js" afterPath="$PROJECT_DIR$/static/js/adminController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/album.py" afterPath="$PROJECT_DIR$/models/album.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.py" afterPath="$PROJECT_DIR$/controller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/post/form.html" afterPath="$PROJECT_DIR$/static/templates/post/form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/frontController.js" afterPath="$PROJECT_DIR$/static/js/frontController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/app/index.html" afterPath="$PROJECT_DIR$/templates/app/index.html" />
+    <list default="true" id="4d03f807-b7fd-4589-af94-cd89b770cc84" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/post/list.html" afterPath="$PROJECT_DIR$/static/templates/post/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/ueditor/dialogs/map/map.html" afterPath="$PROJECT_DIR$/static/js/ueditor/dialogs/map/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/post.py" afterPath="$PROJECT_DIR$/models/post.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -55,37 +46,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="post.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/post.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+            <state line="29" column="78" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.75790924" vertical-offset="0" max-vertical-offset="727">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/templates/post/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="306" selection-end="306" vertical-scroll-proportion="0.27181688" vertical-offset="0" max-vertical-offset="699">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="engine.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/engine.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="17" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/app/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="513">
+            <state line="12" column="39" selection-start="361" selection-end="361" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="589">
               <folding />
             </state>
           </provider>
@@ -95,6 +68,15 @@
         <entry file="file://$PROJECT_DIR$/static/templates/post/form.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="32" column="6" selection-start="61" selection-end="1266" vertical-scroll-proportion="-21.714285" vertical-offset="0" max-vertical-offset="760">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
               <folding />
             </state>
           </provider>
@@ -118,6 +100,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="user.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="adminController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/adminController.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frontController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/frontController.js">
+      <file leaf-file-name="comment.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/comment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="8" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
               <folding />
             </state>
           </provider>
@@ -167,11 +158,11 @@
         <option value="$PROJECT_DIR$/static/templates/post/form.html" />
         <option value="$PROJECT_DIR$/templates/app/admin.html" />
         <option value="$PROJECT_DIR$/templates/app/_layout.html" />
-        <option value="$PROJECT_DIR$/models/post.py" />
         <option value="$PROJECT_DIR$/models/album.py" />
         <option value="$PROJECT_DIR$/controller.py" />
         <option value="$PROJECT_DIR$/static/js/adminController.js" />
         <option value="$PROJECT_DIR$/static/templates/post/list.html" />
+        <option value="$PROJECT_DIR$/models/post.py" />
       </list>
     </option>
   </component>
@@ -775,7 +766,11 @@
       <created>1385801884832</created>
       <updated>1385801884832</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="improved">
+      <created>1385808906060</created>
+      <updated>1385808906060</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -819,31 +814,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/ueditor/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="30" selection-start="6324" selection-end="6324" vertical-scroll-proportion="3.2580037" vertical-offset="683" max-vertical-offset="8626">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="288" selection-end="288" vertical-scroll-proportion="0.20035149" vertical-offset="0" max-vertical-offset="569">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/ueditor/dialogs/map/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="-4.785985" vertical-offset="2565" max-vertical-offset="3268">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="2" selection-start="2375" selection-end="2375" vertical-scroll-proportion="-12.428572" vertical-offset="735" max-vertical-offset="1539">
@@ -916,13 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/adminController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="47" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1045">
@@ -934,7 +897,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/templates/post/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="306" selection-end="306" vertical-scroll-proportion="0.27181688" vertical-offset="0" max-vertical-offset="699">
+        <state line="12" column="39" selection-start="361" selection-end="361" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="589">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/comment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="78" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.75790924" vertical-offset="0" max-vertical-offset="727">
           <folding />
         </state>
       </provider>
