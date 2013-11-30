@@ -3,14 +3,14 @@
 {% block content %}
     <div id="index">
         <div class="row">
-            <div class="panel-group col-lg-8" id="homePosts" >
+            <div class="panel-group col-lg-8" id="homePosts">
                 <div class="reveal-animation" ng-view></div>
             </div>
             <div class=" col-lg-4">
                 <div class="panel panel-success ">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                                <i class="glyphicon glyphicon-compressed"></i> 日志分类
+                            <i class="glyphicon glyphicon-compressed"></i> 日志分类
                         </h4>
                     </div>
                     <div class="panel-collapse collapse in">
@@ -27,15 +27,19 @@
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                        </div>
-                    </div>
+                    <ul class="list-group">
+                        {% for i in posts %}
+                            <li class="list-group-item">
+                                <span class="badge"><i class="glyphicon glyphicon-comment"></i>&nbsp;{{ i.comments }}</span>
+                                <a href="#/post/{{ i.id }}">{{ i.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
                 <div class="panel panel-warning ">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                                <i class="glyphicon glyphicon-comment"></i> 最新评论
+                            <i class="glyphicon glyphicon-comment"></i> 最新评论
                         </h4>
                     </div>
                     <div class="panel-collapse collapse in">
@@ -46,7 +50,7 @@
                 <div class="panel panel-info ">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                                <i class="glyphicon glyphicon-export"></i> 友情链接
+                            <i class="glyphicon glyphicon-export"></i> 友情链接
                         </h4>
                     </div>
                     <div class="panel-collapse collapse in">

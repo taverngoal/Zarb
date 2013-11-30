@@ -1,4 +1,13 @@
 <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand">日志</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#/post/list">列表</a></li>
+            <li><a href="#/post/new">添加</a></li>
+        </ul>
+    </div>
 </nav>
 
 <div class="panel panel-primary">
@@ -15,11 +24,15 @@
                 <th class="text-center">标题</th>
                 <th class="text-center">创建时间</th>
                 <th class="text-center">访问数</th>
+                <th class="text-center">操作</th>
             </tr>
             <tr ng-repeat="post in posts">
-                <td>{{ post.title }}</td>
+                <td><a href="/#/post/{{ post.id }}">{{ post.title }}</a></td>
                 <td>{{ post.created_at | date }}</td>
                 <td>{{ post.views }}</td>
+                <td>
+                    <a href="#/post/edit/{{ post.id }}"><span class="label label-info">编辑</span> </a>
+                </td>
             </tr>
         </table>
     </div>

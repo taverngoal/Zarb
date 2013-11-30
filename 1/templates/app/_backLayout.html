@@ -24,8 +24,8 @@
 <div class="container" id="admin" ng-controller="generalCTRL">
     <div class="col-lg-3">
         <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="/admin#/">首页</a></li>
-            <li><a href="#/post/list">文章列表</a></li>
+            <li ng-class="{ active:module=='home' }" ng-click="module='home'"><a href="#/home/">首页</a></li>
+            <li ng-class="{ active:module=='post' }" ng-click="module='post'"><a href="#/post/list">日志列表</a></li>
         </ul>
     </div>
     <div class="col-lg-9" ng-view>

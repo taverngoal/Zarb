@@ -8,6 +8,8 @@ body.backEnd {    background-image: url('../images/grey.png');}
     /*#index .top_banner { margin-bottom: 20px }*/
 .top_banner { height: 170px; background-image: url('../images/hd_bg.gif')}
 
+a { cursor: pointer }
+a:hover { text-decoration: none }
 
 #space_login { width: 1170px;  }
 

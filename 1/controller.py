@@ -41,7 +41,7 @@ def sign_in(nick=None, psd=None):
 
 @app.route('/')
 def index():
-    posts = obj_post.query.all()
+    posts = obj_post.query.order_by('comments DESC')
     return render_template('app/index.html', posts=posts)
 
 
@@ -67,8 +67,25 @@ def post_add():
 
 @app.route('/post/<int:id>', methods=['get'])
 def post_get(id):
-    obj_post.query.get(id)
-    return jsonify(obj_post.query.get(id).serialize)
+    post = obj_post.query.get(id)
+    post.views += 1
+    return jsonify(post.serialize)
+
+
+@app.route('/post/<int:id>', methods=['post'])
+def post_edit(id):
+    post = jsonC(request.data)
+    edit_post = obj_post.query.get(id)
+    edit_post.title = post.get('title', None)
+    edit_post.content = post.get('content', None)
+    return jsonC({'success': True})
+
+
+@app.route('/post/<int:id>', methods=['delete'])
+def post_delete(id):
+    post = obj_post.query.get(id)
+    db.session.delete(post)
+    return jsonC({'success': True})
 
 
 def jsonC(obj):
