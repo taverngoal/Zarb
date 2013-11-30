@@ -52,7 +52,7 @@ def admin():
 
 @app.route('/post', methods=['get'])
 def post_list():
-    return jsonify(posts=[i.serialize for i in obj_post.query.all()])
+    return jsonify(posts=[i.serialize for i in obj_post.query.order_by('created_at DESC')])
 
 
 @app.route('/post', methods=['post'])

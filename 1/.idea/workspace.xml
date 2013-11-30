@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d03f807-b7fd-4589-af94-cd89b770cc84" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/app/_backLayout.html" afterPath="$PROJECT_DIR$/templates/app/_backLayout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/app/_layout.html" afterPath="$PROJECT_DIR$/templates/app/_layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.py" afterPath="$PROJECT_DIR$/controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1.iws" />
@@ -35,10 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controller.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="controller.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="35" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0" vertical-offset="1234" max-vertical-offset="1938">
+            <state line="54" column="87" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.109375" vertical-offset="949" max-vertical-offset="1938">
               <folding>
                 <element signature="e#14#25#0" expanded="true" />
               </folding>
@@ -64,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_backLayout.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_backLayout.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/app/_backLayout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="25" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.6627219" vertical-offset="84" max-vertical-offset="779">
+            <state line="4" column="74" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="779">
               <folding />
             </state>
           </provider>
@@ -122,7 +121,15 @@
         <entry file="file://$PROJECT_DIR$/static/js/frontController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="33" column="67" selection-start="1237" selection-end="1261" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="779">
-              <folding />
+              <folding>
+                <marker date="1385832651000" expanded="true" signature="174:236" placeholder="[...]" />
+                <marker date="1385832651000" expanded="true" signature="227:235" placeholder="{...}" />
+                <marker date="1385832651000" expanded="true" signature="250:643" placeholder="[...]" />
+                <marker date="1385832651000" expanded="true" signature="295:642" placeholder="{...}" />
+                <marker date="1385832651000" expanded="true" signature="916:1083" placeholder="[...]" />
+                <marker date="1385832651000" expanded="true" signature="973:1082" placeholder="{...}" />
+                <marker date="1385832651000" expanded="true" signature="1117:1272" placeholder="[...]" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,12 +162,12 @@
         <option value="$PROJECT_DIR$/static/js/frontController.js" />
         <option value="$PROJECT_DIR$/templates/app/index.html" />
         <option value="$PROJECT_DIR$/static/css/site.css" />
-        <option value="$PROJECT_DIR$/controller.py" />
         <option value="$PROJECT_DIR$/static/js/adminController.js" />
         <option value="$PROJECT_DIR$/static/templates/post/form.html" />
         <option value="$PROJECT_DIR$/static/templates/post/list.html" />
         <option value="$PROJECT_DIR$/templates/app/_layout.html" />
         <option value="$PROJECT_DIR$/templates/app/_backLayout.html" />
+        <option value="$PROJECT_DIR$/controller.py" />
       </list>
     </option>
   </component>
@@ -770,7 +777,11 @@
       <created>1385837118341</created>
       <updated>1385837118341</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="improved">
+      <created>1385837467656</created>
+      <updated>1385837467656</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -861,7 +872,15 @@
     <entry file="file://$PROJECT_DIR$/static/js/frontController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="67" selection-start="1237" selection-end="1261" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="779">
-          <folding />
+          <folding>
+            <marker date="1385832651000" expanded="true" signature="174:236" placeholder="[...]" />
+            <marker date="1385832651000" expanded="true" signature="227:235" placeholder="{...}" />
+            <marker date="1385832651000" expanded="true" signature="250:643" placeholder="[...]" />
+            <marker date="1385832651000" expanded="true" signature="295:642" placeholder="{...}" />
+            <marker date="1385832651000" expanded="true" signature="916:1083" placeholder="[...]" />
+            <marker date="1385832651000" expanded="true" signature="973:1082" placeholder="{...}" />
+            <marker date="1385832651000" expanded="true" signature="1117:1272" placeholder="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -869,15 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="60" selection-start="353" selection-end="353" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="418">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="35" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="1938">
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="91" selection-start="1461" selection-end="1461" vertical-scroll-proportion="-17.642857" vertical-offset="114" max-vertical-offset="1311">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/app/_layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="41" selection-start="2209" selection-end="2209" vertical-scroll-proportion="-8.821428" vertical-offset="456" max-vertical-offset="1444">
@@ -925,8 +928,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/app/_backLayout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.6627219" vertical-offset="84" max-vertical-offset="779">
+        <state line="4" column="74" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="779">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="91" selection-start="1461" selection-end="1461" vertical-scroll-proportion="-17.642857" vertical-offset="114" max-vertical-offset="1311">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="87" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.109375" vertical-offset="949" max-vertical-offset="1938">
+          <folding>
+            <element signature="e#14#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
