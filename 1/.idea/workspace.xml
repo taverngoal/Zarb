@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d03f807-b7fd-4589-af94-cd89b770cc84" name="Default" comment="improved">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/templates/setting/account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/app/_backLayout.html" afterPath="$PROJECT_DIR$/templates/app/_backLayout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/adminController.js" afterPath="$PROJECT_DIR$/static/js/adminController.js" />
+    <list default="true" id="4d03f807-b7fd-4589-af94-cd89b770cc84" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/templates/comment/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/comment.py" afterPath="$PROJECT_DIR$/models/comment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.py" afterPath="$PROJECT_DIR$/controller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/post/form.html" afterPath="$PROJECT_DIR$/static/templates/post/form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/app/login.html" afterPath="$PROJECT_DIR$/templates/app/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/frontController.js" afterPath="$PROJECT_DIR$/static/js/frontController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/post/front_view.html" afterPath="$PROJECT_DIR$/static/templates/post/front_view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1.iws" />
@@ -20,7 +19,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/1$Run.coverage" NAME="Run Coverage Results" MODIFIED="1385912684981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1$Run.coverage" NAME="Run Coverage Results" MODIFIED="1385915690320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -39,30 +38,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controller.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controller.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="40" selection-start="831" selection-end="831" vertical-scroll-proportion="0.89169675" vertical-offset="0" max-vertical-offset="2641">
+            <state line="137" column="32" selection-start="3586" selection-end="3586" vertical-scroll-proportion="0.0" vertical-offset="2127" max-vertical-offset="2964">
               <folding>
                 <element signature="e#14#25#0" expanded="true" />
+                <marker date="1385915690312" expanded="true" signature="3337:3457" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/app/login.html">
+      <file leaf-file-name="comment.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/comment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="33" selection-start="259" selection-end="259" vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="513">
+            <state line="24" column="26" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
+              <folding>
+                <marker date="1385915541064" expanded="true" signature="124:1197" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/post.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="59" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_backLayout.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/app/_backLayout.html">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="145" selection-start="2126" selection-end="2126" vertical-scroll-proportion="-19.0" vertical-offset="0" max-vertical-offset="798">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/photo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/templates/comment/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="9" selection-start="296" selection-end="296" vertical-scroll-proportion="0.22485207" vertical-offset="0" max-vertical-offset="676">
               <folding />
             </state>
           </provider>
@@ -71,34 +100,34 @@
       <file leaf-file-name="adminController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/adminController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="25" selection-start="4216" selection-end="4216" vertical-scroll-proportion="0.0" vertical-offset="1723" max-vertical-offset="2527">
+            <state line="45" column="17" selection-start="1863" selection-end="1887" vertical-scroll-proportion="-9.04" vertical-offset="629" max-vertical-offset="2527">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/templates/setting/account.html">
+      <file leaf-file-name="front_list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/post/front_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="92" selection-start="3071" selection-end="3071" vertical-scroll-proportion="-8.075472" vertical-offset="712" max-vertical-offset="1387">
+            <state line="16" column="4" selection-start="679" selection-end="679" vertical-scroll-proportion="-10.857142" vertical-offset="0" max-vertical-offset="418">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/templates/post/list.html">
+      <file leaf-file-name="frontController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/frontController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="517" selection-end="517" vertical-scroll-proportion="-5.321429" vertical-offset="136" max-vertical-offset="836">
+            <state line="41" column="26" selection-start="1467" selection-end="1467" vertical-scroll-proportion="-9.68" vertical-offset="537" max-vertical-offset="1216">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/templates/post/form.html">
+      <file leaf-file-name="front_view.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/post/front_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="26" selection-start="1255" selection-end="1255" vertical-scroll-proportion="-12.214286" vertical-offset="209" max-vertical-offset="969">
+            <state line="18" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="-12.214286" vertical-offset="0" max-vertical-offset="532">
               <folding />
             </state>
           </provider>
@@ -122,12 +151,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/app/admin.html" />
-        <option value="$PROJECT_DIR$/models/album.py" />
         <option value="$PROJECT_DIR$/models/post.py" />
-        <option value="$PROJECT_DIR$/static/templates/post/front_view.html" />
         <option value="$PROJECT_DIR$/static/templates/post/front_list.html" />
-        <option value="$PROJECT_DIR$/static/js/frontController.js" />
         <option value="$PROJECT_DIR$/templates/app/index.html" />
         <option value="$PROJECT_DIR$/static/css/site.css" />
         <option value="$PROJECT_DIR$/static/templates/post/list.html" />
@@ -137,7 +162,11 @@
         <option value="$PROJECT_DIR$/static/templates/setting/account.html" />
         <option value="$PROJECT_DIR$/static/js/adminController.js" />
         <option value="$PROJECT_DIR$/templates/app/login.html" />
+        <option value="$PROJECT_DIR$/static/templates/post/front_view.html" />
+        <option value="$PROJECT_DIR$/models/comment.py" />
         <option value="$PROJECT_DIR$/controller.py" />
+        <option value="$PROJECT_DIR$/static/js/frontController.js" />
+        <option value="$PROJECT_DIR$/static/templates/comment/list.html" />
       </list>
     </option>
   </component>
@@ -249,6 +278,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="post" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -683,29 +802,33 @@
       <created>1385837640711</created>
       <updated>1385837640711</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="improved">
+      <created>1385912809686</created>
+      <updated>1385912809686</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293461" sideWeight="0.67255217" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.241033" sideWeight="0.76953644" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.241033" sideWeight="0.7689243" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39872408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23969072" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23046358" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2310757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32695374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32669324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -727,75 +850,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="22" selection-start="4044" selection-end="4044" vertical-scroll-proportion="0.33238637" vertical-offset="3528" max-vertical-offset="4313">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/post/front_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="210" selection-end="210" vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/frontController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="67" selection-start="1237" selection-end="1261" vertical-scroll-proportion="0.7912088" vertical-offset="51" max-vertical-offset="779">
-          <folding>
-            <marker date="1385832651000" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1385832651000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1385832651000" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1385832651000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1385832651000" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1385832651000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1385832651000" expanded="true" signature="-1:-1" placeholder="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/post/front_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="60" selection-start="353" selection-end="353" vertical-scroll-proportion="0.19" vertical-offset="0" max-vertical-offset="700">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/app/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/app/_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="41" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.35285714" vertical-offset="456" max-vertical-offset="1444">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="91" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.72861356" vertical-offset="114" max-vertical-offset="1311">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/post/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="517" selection-end="517" vertical-scroll-proportion="-5.321429" vertical-offset="136" max-vertical-offset="836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/templates/post/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="26" selection-start="1255" selection-end="1255" vertical-scroll-proportion="-12.214286" vertical-offset="209" max-vertical-offset="969">
@@ -817,13 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/adminController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="25" selection-start="4216" selection-end="4216" vertical-scroll-proportion="0.0" vertical-offset="1723" max-vertical-offset="2527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/engine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="33" selection-start="1761" selection-end="1761" vertical-scroll-proportion="-0.13718411" vertical-offset="1368" max-vertical-offset="1995">
@@ -838,12 +885,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6114" column="114" selection-start="208155" selection-end="208166" vertical-scroll-proportion="0.33333334" vertical-offset="115944" max-vertical-offset="382584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/post/front_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="-12.214286" vertical-offset="0" max-vertical-offset="532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="59" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/photo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/comment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="26" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
+          <folding>
+            <marker date="1385915541064" expanded="true" signature="124:1197" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="40" selection-start="831" selection-end="831" vertical-scroll-proportion="0.89169675" vertical-offset="0" max-vertical-offset="2641">
+        <state line="137" column="32" selection-start="3586" selection-end="3586" vertical-scroll-proportion="0.0" vertical-offset="2127" max-vertical-offset="2964">
           <folding>
             <element signature="e#14#25#0" expanded="true" />
+            <marker date="1385915690312" expanded="true" signature="3337:3457" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/adminController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="17" selection-start="1863" selection-end="1887" vertical-scroll-proportion="-9.04" vertical-offset="629" max-vertical-offset="2527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/frontController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="26" selection-start="1467" selection-end="1467" vertical-scroll-proportion="-9.68" vertical-offset="537" max-vertical-offset="1216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/post/front_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="4" selection-start="679" selection-end="679" vertical-scroll-proportion="-10.857142" vertical-offset="0" max-vertical-offset="418">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/comment/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="9" selection-start="296" selection-end="296" vertical-scroll-proportion="0.22485207" vertical-offset="0" max-vertical-offset="676">
+          <folding />
         </state>
       </provider>
     </entry>

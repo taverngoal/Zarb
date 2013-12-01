@@ -1,7 +1,7 @@
 # coding:utf8
 import json
 
-from flask import Flask, render_template, __version__, redirect, url_for, request, jsonify, session
+from flask import Flask, render_template, __version__, redirect, url_for, request, jsonify
 
 from ext.flask_sqlalchemy import SQLAlchemy
 
@@ -23,10 +23,11 @@ def authorize(func):
         return redirect('/login')
 
     def wrapper(*args, **kwargs):
-        #if session.get('logined', None):
-            return func(*args, **kwargs)
+    #if session.get('logined', None):
+        return func(*args, **kwargs)
         #els
         # turn unauthorized()
+
     return wrapper
 
 
@@ -123,6 +124,22 @@ def setting_set_account():
     if psd:
         psd.value = account.get('psd', None)
     return jsonify(success=True)
+
+
+@app.route('/comment/<int:postid>', methods=['get'])
+def comments_get(postid):
+    comments = obj_comments.query.filter_by(postid=postid)
+    return jsonify(comments=[i.serialize for i in comments])
+
+
+@app.route('/comment', methods=['post'])
+def comment_add():
+    comment = jsonC(request.data)
+    new_comment = obj_comments()
+    new_comment.content = comment.get('content', None)
+    new_comment.nick = comment.get('nick', None)
+    db.session.add(new_comment)
+    return jsonC({'success': True})
 
 
 def jsonC(obj):
