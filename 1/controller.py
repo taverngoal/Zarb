@@ -1,7 +1,7 @@
 # coding:utf8
 import json
 
-from flask import Flask, render_template, __version__, redirect, url_for, request, jsonify
+from flask import Flask, render_template, __version__, redirect, url_for, request, jsonify, session
 
 from ext.flask_sqlalchemy import SQLAlchemy
 
@@ -16,6 +16,18 @@ app.debug = True                                # 设置debug模式
 from models import *                                 # 加载所有模型
 
 db.create_all()                                 # 创建数据库所有表
+
+
+def authorize(func):
+    def unauthorized():
+        return redirect('/login')
+
+    def wrapper(*args, **kwargs):
+        #if session.get('logined', None):
+            return func(*args, **kwargs)
+        #els
+        # turn unauthorized()
+    return wrapper
 
 
 @app.teardown_request
@@ -46,6 +58,7 @@ def index():
 
 
 @app.route('/admin')
+@authorize
 def admin():
     return render_template('app/admin.html')
 
@@ -86,6 +99,30 @@ def post_delete(id):
     post = obj_post.query.get(id)
     db.session.delete(post)
     return jsonC({'success': True})
+
+
+@app.route('/setting/account', methods=['get'])
+def setting_get_account():
+    nick = obj_setting.query.get('nick')
+    name = obj_setting.query.get('name')
+    return jsonify(nick=nick.value if nick else None, name=name.value if name else None)
+
+
+@authorize
+@app.route('/setting/account', methods=['post'])
+def setting_set_account():
+    account = jsonC(request.data)
+    print account
+    nick = obj_setting.query.get('nick')
+    name = obj_setting.query.get('name')
+    psd = obj_setting.query.get('psd')
+    if nick:
+        nick.value = account.get('nick', None)
+    if name:
+        name.value = account.get('name', None)
+    if psd:
+        psd.value = account.get('psd', None)
+    return jsonify(success=True)
 
 
 def jsonC(obj):
