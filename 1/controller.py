@@ -54,8 +54,9 @@ def sign_in(nick=None, psd=None):
 
 @app.route('/')
 def index():
-    posts = obj_post.query.order_by('comments DESC')
-    return render_template('app/index.html', posts=posts)
+    posts = obj_post.query.order_by('comments DESC').slice(0, 10)
+    comments = obj_comments.query.order_by('created_at DESC').slice(0, 10)
+    return render_template('app/index.html', posts=posts, comments=comments)
 
 
 @app.route('/admin')
@@ -65,8 +66,12 @@ def admin():
 
 
 @app.route('/post', methods=['get'])
-def post_list():
-    return jsonify(posts=[i.serialize for i in obj_post.query.order_by('created_at DESC')])
+@app.route('/post/<int:size>/<int:page>', methods=['get'])
+def post_list(page=0, size=0):
+    posts = obj_post.query.order_by('created_at DESC')
+    if size != 0:
+        posts = obj_post.query.slice(page * size, page * size + size)
+    return jsonify(posts=[i.serialize for i in posts])
 
 
 @app.route('/post', methods=['post'])
@@ -127,8 +132,12 @@ def setting_set_account():
 
 
 @app.route('/comment/<int:postid>', methods=['get'])
-def comments_get(postid):
-    comments = obj_comments.query.filter_by(postid=postid)
+@app.route('/comment/<int:postid>/<int:size>/<int:page>', methods=['get'])
+def comments_get(postid, size=0, page=0):
+    comments = obj_comments.query.filter_by(postid=postid).order_by('created_at')
+    if size:
+        comments = comments.slice(page * size, page * size + size)
+
     return jsonify(comments=[i.serialize for i in comments])
 
 
