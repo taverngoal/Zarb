@@ -110,13 +110,12 @@ var setting = angular.module('blog.setting', [])
         }
     }])
     .service('settingService', function ($resource) {
-        var service = {
+        return {
             account: $resource('/setting/account', {}).get(),
             update: function (account, callback) {
                 $resource('/setting/account', {}).save(account, callback)
             }
         };
-        return service;
     })
 //    .factory('settingService', function ($resource) {
 //        return $resource('/setting/account', {});

@@ -138,6 +138,8 @@ def comment_add():
     new_comment = obj_comments()
     new_comment.content = comment.get('content', None)
     new_comment.nick = comment.get('nick', None)
+    new_comment.email = comment.get('email', None)
+    new_comment.postid = comment.get('postid', None)
     db.session.add(new_comment)
     return jsonC({'success': True})
 
