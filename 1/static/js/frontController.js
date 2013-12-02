@@ -51,6 +51,7 @@ var comment = angular.module('blog.comment', [])
                     commentService.addComment(scope.comment, function (content) {
                         if (content.success) {
                             scope.comments = commentService.comments($route.current.params.id);
+                            $('form')[0].reset();
                             $(ele).popover('show');
                             setTimeout(function () {
                                 $(ele).popover('hide');
