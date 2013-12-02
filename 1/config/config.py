@@ -6,6 +6,7 @@ if 'SERVER_SOFTWARE' in os.environ:             # 百度环境下加载的配置
     # -*- coding: utf-8 -*-
     from bae.core import const
     # configuration mysql
+    SQLALCHEMY_POOL_RECYCLE = 10
     SQLALCHEMY_DATABASE_URI = 'mysql://%s:%s@%s:%s/%s?charset=utf8' % (const.MYSQL_USER, const.MYSQL_PASS, const.MYSQL_HOST,
                                                                        int(const.MYSQL_PORT), 'cfnQuUjKaqFpmRifftSC')
     AK = 'z9NR4maoM1CNEUZ3BRvrv2GK'
