@@ -70,7 +70,7 @@ def admin():
 def post_list(page=0, size=0):
     posts = obj_post.query.order_by('created_at DESC')
     if size != 0:
-        posts = obj_post.query.slice(page * size, page * size + size)
+        posts = posts.slice(page * size, page * size + size)
     return jsonify(posts=[i.serialize for i in posts])
 
 
