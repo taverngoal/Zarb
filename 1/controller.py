@@ -134,7 +134,7 @@ def setting_set_account():
 @app.route('/comment/<int:postid>', methods=['get'])
 @app.route('/comment/<int:postid>/<int:size>/<int:page>', methods=['get'])
 def comments_get(postid, size=0, page=0):
-    comments = obj_comments.query.filter_by(postid=postid).order_by('created_at')
+    comments = obj_comments.query.filter_by(postid=postid).order_by('created_at DESC')
     if size:
         comments = comments.slice(page * size, page * size + size)
 
