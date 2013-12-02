@@ -54,7 +54,7 @@ def sign_in(nick=None, psd=None):
 
 @app.route('/')
 def index():
-    posts = obj_post.query.order_by('comments DESC').slice(0, 10)
+    posts = obj_post.query.order_by('created_at DESC').slice(0, 10)
     comments = obj_comments.query.order_by('created_at DESC').slice(0, 10)
     return render_template('app/index.html', posts=posts, comments=comments)
 

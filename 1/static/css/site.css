@@ -26,7 +26,7 @@ div.thumbnail { margin-bottom: 30px;}
 #homePosts .panel-list { margin-bottom: 30px; height: 250px; text-overflow: ellipsis;white-space: nowrap; overflow:hidden }
 #homePosts .panel .panel-title { text-overflow: ellipsis;white-space: nowrap; overflow:hidden;  font-family: 'microsoft yahei ui',sans-serif; font-size: 24px;  }
 #homePosts .panel .panel-title i{ color:#336699; position: relative; top:4px ; overflow: visible }
-#homePosts .panel .panel-collapse { height: 155px}
+#homePosts .panel-list .panel-collapse { height: 155px}
 #homePosts .panel .panel-footer {  position: relative; height: 50px; border-top: #ddd solid 1px; background-color: #fafafa; color: #aaa }
 #homePosts .panel .panel-heading {background-color: #fff; height: 50px; line-height: 50px;}
 #homePosts .panel-view { margin-bottom: 30px;  }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d03f807-b7fd-4589-af94-cd89b770cc84" name="Default" comment="improved">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/app/_layout.html" afterPath="$PROJECT_DIR$/templates/app/_layout.html" />
+    <list default="true" id="4d03f807-b7fd-4589-af94-cd89b770cc84" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.py" afterPath="$PROJECT_DIR$/controller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/frontController.js" afterPath="$PROJECT_DIR$/static/js/frontController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/app/index.html" afterPath="$PROJECT_DIR$/templates/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/site.css" afterPath="$PROJECT_DIR$/static/css/site.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1.iws" />
@@ -37,10 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controller.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="controller.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="58" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.0" vertical-offset="868" max-vertical-offset="3211">
+            <state line="56" column="47" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.2784091" vertical-offset="868" max-vertical-offset="3211">
               <folding>
                 <element signature="e#14#25#0" expanded="true" />
               </folding>
@@ -69,7 +67,7 @@
       <file leaf-file-name="site.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/site.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="61" selection-start="765" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="1007">
+            <state line="28" column="22" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="1007">
               <folding />
             </state>
           </provider>
@@ -104,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_layout.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_layout.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/app/_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="30" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.47781065" vertical-offset="342" max-vertical-offset="1444">
+            <state line="35" column="30" selection-start="2097" selection-end="2097" vertical-scroll-proportion="-11.535714" vertical-offset="342" max-vertical-offset="1444">
               <folding />
             </state>
           </provider>
@@ -159,19 +157,19 @@
         <option value="$PROJECT_DIR$/static/js/adminController.js" />
         <option value="$PROJECT_DIR$/static/templates/post/front_list.html" />
         <option value="$PROJECT_DIR$/static/templates/post/front_view.html" />
-        <option value="$PROJECT_DIR$/static/css/site.css" />
         <option value="$PROJECT_DIR$/static/templates/comment/list.html" />
-        <option value="$PROJECT_DIR$/controller.py" />
         <option value="$PROJECT_DIR$/templates/app/index.html" />
         <option value="$PROJECT_DIR$/static/js/frontController.js" />
         <option value="$PROJECT_DIR$/templates/app/_layout.html" />
+        <option value="$PROJECT_DIR$/static/css/site.css" />
+        <option value="$PROJECT_DIR$/controller.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1452" />
+    <option name="width" value="1456" />
     <option name="height" value="886" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -997,11 +995,15 @@
       <created>1385996313787</created>
       <updated>1385996313787</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="improved">
+      <created>1386000102294</created>
+      <updated>1386000102294</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1452" height="886" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1010,7 +1012,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293461" sideWeight="0.67255217" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.252518" sideWeight="0.7689243" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2517934" sideWeight="0.7689243" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39872408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23969072" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1108,22 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="58" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.0" vertical-offset="868" max-vertical-offset="3211">
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="61" selection-start="765" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="1007">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/adminController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="7" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="1827" max-vertical-offset="2508">
@@ -1149,8 +1135,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/app/_layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="30" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.47781065" vertical-offset="342" max-vertical-offset="1444">
+        <state line="35" column="30" selection-start="2097" selection-end="2097" vertical-scroll-proportion="-11.535714" vertical-offset="342" max-vertical-offset="1444">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="22" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="1007">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="47" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.2784091" vertical-offset="868" max-vertical-offset="3211">
+          <folding>
+            <element signature="e#14#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
