@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d03f807-b7fd-4589-af94-cd89b770cc84" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/improved.patch" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1.iws" />
@@ -99,7 +100,7 @@
       <file leaf-file-name="_backLayout.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/app/_backLayout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="41" selection-start="641" selection-end="641" vertical-scroll-proportion="0.25791857" vertical-offset="0" max-vertical-offset="798">
+            <state line="30" column="13" selection-start="2261" selection-end="2261" vertical-scroll-proportion="0.8597285" vertical-offset="0" max-vertical-offset="798">
               <folding />
             </state>
           </provider>
@@ -885,7 +886,11 @@
       <created>1386075016898</created>
       <updated>1386075016898</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="improved">
+      <created>1386075038983</created>
+      <updated>1386075038983</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1024,7 +1029,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/app/_backLayout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="641" selection-end="641" vertical-scroll-proportion="0.25791857" vertical-offset="0" max-vertical-offset="798">
+        <state line="30" column="13" selection-start="2261" selection-end="2261" vertical-scroll-proportion="0.8597285" vertical-offset="0" max-vertical-offset="798">
           <folding />
         </state>
       </provider>
