@@ -424,7 +424,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="last_opened_file_path" value="D:/Python275/python.exe" />
     <property name="FullScreen" value="false" />
@@ -881,7 +881,11 @@
       <created>1386075008024</created>
       <updated>1386075008024</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="improved">
+      <created>1386075016898</created>
+      <updated>1386075016898</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
