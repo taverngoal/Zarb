@@ -1,0 +1,75 @@
+{% extends 'app/_layout.html' %}
+
+{% block content %}
+    <div id="index">
+        <div class="row">
+            <div class="panel-group col-lg-8" id="homePosts">
+                <div class="reveal-animation" ng-view></div>
+            </div>
+            <div class=" col-lg-4">
+                <div class="panel panel-success ">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <i class="glyphicon glyphicon-compressed"></i> 日志分类
+                        </h4>
+                    </div>
+                    <div class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <p class="tags">
+                                {% for i in tags %}
+                                    <a class="tagItem" href="/#/tag/{{ i.id }}/postlist"><span class="label label-{{ claz[i.id%6] }}">{{ i.title }}
+                                        <span class="count">{{ i.count }}</span></span></a>
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-danger ">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion">
+                                <i class="glyphicon glyphicon-fire"></i> 热门日志
+                            </a>
+                        </h4>
+                    </div>
+                    <ul class="list-group">
+                        {% for i in posts %}
+                            <li class="list-group-item">
+                                <span class="badge"><i
+                                        class="glyphicon glyphicon-comment"></i>&nbsp;{{ i.comments }}</span>
+                                <a href="#/post/{{ i.id }}">{{ i.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="panel panel-warning ">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <i class="glyphicon glyphicon-comment"></i> 最新评论
+                        </h4>
+                    </div>
+                    <ul class="list-group">
+                        {% for i in comments %}
+                            <li class="list-group-item"
+                                style="text-overflow: ellipsis;white-space: nowrap; overflow-x: hidden">
+                                <a href="#/post/{{ i.postid }}">
+                                    <i class="glyphicon glyphicon-comment"></i> {{ i.content }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="panel panel-info ">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <i class="glyphicon glyphicon-export"></i> 友情链接
+                        </h4>
+                    </div>
+                    <div class="panel-collapse collapse in">
+                        <div class="panel-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

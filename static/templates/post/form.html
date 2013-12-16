@@ -1,0 +1,53 @@
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand">日志</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="#/post/list">列表</a></li>
+            <li ng-class="{active:!isEdit } "><a href="#/post/new">添加</a></li>
+            <li ng-class="{active:isEdit } " ng-show="isEdit"><a>编辑</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            {{ isEdit?"编辑":"添加新文章"}}
+        </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <form ng-submit="submit()" novalidate="novalidate" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="title" class="col-sm-1 control-label">标题</label>
+
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="title" ng-model="post.title" id="title">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="title" class="col-sm-1 control-label">分类</label>
+
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="title" ng-model="post.tags" id="title">
+                        <span class="help-block">多个分类用空格隔开，如：日记 见闻 转载</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">内容</label>
+                    <div class="col-sm-11" id="postNew">
+                        <textarea id="post_content" ng-model="post.content" class="col-sm-11"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <button class="btn btn-primary">提交</button>
+                        <button type="button" class="btn btn-danger" ng-click="delete()" ng-show="isEdit">删除</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

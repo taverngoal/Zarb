@@ -1,0 +1,36 @@
+
+<div class="panel panel-default panel-list" ng-repeat="post in posts.posts">
+    <div class="panel-heading">
+        <h4 class="panel-title" title="{{ post.title }}">
+            <a href="#/post/{{ post.id }}"><i class="glyphicon glyphicon-record"></i> {{ post.title }}</a>
+        </h4>
+    </div>
+    <div class="panel-collapse in">
+        <div class="panel-body">
+            <p class="tags" ng-hide="post.tag_objs.length==0">
+                <a class="tagItem" ng-repeat="tag in post.tag_objs" href="/#/tag/{{ tag.id }}/postlist">
+                    <span class="label"
+                          ng-class="{ 'label-default': $index%6==0,
+                                      'label-primary': $index%6==1,
+                                      'label-success': $index%6==2,
+                                      'label-info': $index%6==3,
+                                      'label-warning': $index%6==4,
+                                      'label-danger': $index%6==5}">
+                         {{ tag.title }}
+                    </span>
+                </a>
+            </p>
+
+            <div ng-bind-html="post.content"></div>
+        </div>
+    </div>
+    <div class="panel-footer text-right">
+        <i class="glyphicon glyphicon-time"></i> {{ post.created_at }}
+        &nbsp;
+        <i class="glyphicon glyphicon-comment"></i> {{ post.comments }} &nbsp;
+        <i class="glyphicon glyphicon-eye-open"></i> {{ post.views }} &nbsp;
+    </div>
+</div>
+<div class="clearfix">
+    <ul class="pagination pull-right" ng-show="showPagination"></ul>
+</div>

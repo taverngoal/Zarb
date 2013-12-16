@@ -1,0 +1,68 @@
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand">设置</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#/setting/account">账户设置</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            修改账户信息
+        </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <form ng-submit="submit()" novalidate="novalidate" class="form-horizontal" role="form" name="form">
+                <div class="form-group" ng-class="{ 'has-error': form.nick.$invalid }">
+                    <label for="loginNick" class="col-sm-2 control-label">登陆账号</label>
+
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="nick" ng-model="account.nick" id="loginNick"
+                               required>
+                        <span class="help-block">登陆管理端的账号。<span ng-show="form.nick.$invalid">不能为空！</span></span>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{ 'has-error': form.name.$invalid }">
+                    <label for="name" class="col-sm-2 control-label">昵称</label>
+
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="name" ng-model="account.name" id="name"
+                               required>
+                        <span class="help-block">在前端页面显示的名字。<span ng-show="form.name.$invalid">不能为空！</span></span>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{ 'has-error': form.password.$invalid }">
+                    <label for="password" class="col-sm-2 control-label">密码</label>
+
+                    <div class="col-sm-8">
+                        <input type="password" class="form-control" name="password" ng-model="account.psd" id="password"
+                               r-Password>
+
+                        <span class="help-block">密码，不修改密码请留空。<span
+                                ng-show="form.password.$error.same">密码不同！</span><span
+                                ng-show="form.password.$error.min6">密码最短6位！</span></span>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{ 'has-error': form.password.$invalid }">
+                    <label for="rpassword" class="col-sm-2 control-label">确认密码</label>
+
+                    <div class="col-sm-8">
+                        <input type="password" class="form-control" name="rpassword" ng-model="account.rpsd"
+                               id="rpassword">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="btn btn-primary" ng-disabled="form.$invalid" account-Update>提交
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

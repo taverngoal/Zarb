@@ -1,0 +1,37 @@
+<div>
+    <div class="panel panel-default panel-view">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <i class="glyphicon glyphicon-record"></i> {{ post.title }}
+            </h4>
+        </div>
+        <div class="panel-collapse in">
+            <div class="panel-body">
+                <p class="tags" ng-hide="post.tags.length==0">
+                    <a class="tagItem" ng-repeat="tag in post.tags.split(' ')">
+                    <span class="label"
+                          ng-class="{ 'label-default': $index%6==0,
+                                      'label-primary': $index%6==1,
+                                      'label-success': $index%6==2,
+                                      'label-info': $index%6==3,
+                                      'label-warning': $index%6==4,
+                                      'label-danger': $index%6==5}">
+                         {{ tag }}
+                    </span>
+                    </a>
+                </p>
+
+                <div ng-bind-html="post.content"></div>
+            </div>
+        </div>
+        <div class="panel-footer text-right">
+            <i class="glyphicon glyphicon-time"></i> {{ post.created_at }}
+            &nbsp;
+            <i class="glyphicon glyphicon-comment"></i> {{ post.comments }} &nbsp;
+            <i class="glyphicon glyphicon-eye-open"></i> {{ post.views }} &nbsp;
+        </div>
+        <div comment-List>
+
+        </div>
+    </div>
+</div>
